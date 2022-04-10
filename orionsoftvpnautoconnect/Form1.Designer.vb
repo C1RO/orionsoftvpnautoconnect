@@ -37,6 +37,10 @@
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
+        Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -71,7 +75,7 @@
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(12, 273)
+        Me.Button1.Location = New System.Drawing.Point(12, 326)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(209, 30)
         Me.Button1.TabIndex = 3
@@ -85,9 +89,9 @@
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(12, 431)
+        Me.Button2.Location = New System.Drawing.Point(12, 470)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(209, 30)
+        Me.Button2.Size = New System.Drawing.Size(209, 33)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Desconectar"
         Me.Button2.UseVisualStyleBackColor = False
@@ -108,7 +112,7 @@
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(12, 326)
+        Me.Button3.Location = New System.Drawing.Point(12, 362)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(209, 30)
         Me.Button3.TabIndex = 6
@@ -162,13 +166,67 @@
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.White
+        Me.Button4.Location = New System.Drawing.Point(12, 398)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(209, 30)
+        Me.Button4.TabIndex = 11
+        Me.Button4.Text = "Guardar Informacion"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Button5
+        '
+        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button5.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ForeColor = System.Drawing.Color.White
+        Me.Button5.Location = New System.Drawing.Point(12, 434)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(209, 30)
+        Me.Button5.TabIndex = 12
+        Me.Button5.Text = "Olvidar Informacion"
+        Me.Button5.UseVisualStyleBackColor = False
+        '
+        'LabelControl1
+        '
+        Me.LabelControl1.Appearance.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl1.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LabelControl1.Appearance.Options.UseFont = True
+        Me.LabelControl1.Appearance.Options.UseForeColor = True
+        Me.LabelControl1.Location = New System.Drawing.Point(77, 292)
+        Me.LabelControl1.Name = "LabelControl1"
+        Me.LabelControl1.Size = New System.Drawing.Size(104, 18)
+        Me.LabelControl1.TabIndex = 13
+        Me.LabelControl1.Text = "Desconectado"
+        '
+        'LabelControl2
+        '
+        Me.LabelControl2.Appearance.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelControl2.Appearance.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.LabelControl2.Appearance.Options.UseFont = True
+        Me.LabelControl2.Appearance.Options.UseForeColor = True
+        Me.LabelControl2.Location = New System.Drawing.Point(12, 292)
+        Me.LabelControl2.Name = "LabelControl2"
+        Me.LabelControl2.Size = New System.Drawing.Size(59, 18)
+        Me.LabelControl2.TabIndex = 14
+        Me.LabelControl2.Text = "Estado :"
+        '
         'OrionVpn
         '
         Me.Appearance.BackColor = System.Drawing.Color.White
         Me.Appearance.Options.UseBackColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(233, 473)
+        Me.ClientSize = New System.Drawing.Size(233, 515)
+        Me.Controls.Add(Me.LabelControl2)
+        Me.Controls.Add(Me.LabelControl1)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -179,6 +237,7 @@
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.IconOptions.Image = Global.orionsoftvpnautoconnect.My.Resources.Resources.RionSoft__6_
         Me.MaximizeBox = False
         Me.Name = "OrionVpn"
@@ -201,6 +260,10 @@
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
 
 #End Region
 
