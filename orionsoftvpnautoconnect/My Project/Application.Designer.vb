@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.orionsoftvpnautoconnect.Form1
+            Me.MainForm = Global.orionsoftvpnautoconnect.OrionVpn
         End Sub
     End Class
 End Namespace

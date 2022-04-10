@@ -3,7 +3,7 @@ Imports System.Net.NetworkInformation
 Imports System.Text
 Imports Microsoft.VisualBasic.Devices
 
-Partial Public Class Form1
+Partial Public Class OrionVpn
     Public Sub New()
         InitializeComponent()
         Timer1.Start()
@@ -51,11 +51,11 @@ Partial Public Class Form1
 
         If blnExist Then
 
-            MessageBox.Show("VPN Exists")
+            MessageBox.Show("Vpn Conectada Correctamente")
 
         Else
 
-            MessageBox.Show("VPN Does Not Exist")
+            MessageBox.Show("Error vpn no encontrada")
 
         End If
 
@@ -123,6 +123,14 @@ Partial Public Class Form1
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
