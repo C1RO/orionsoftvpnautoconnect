@@ -25,6 +25,7 @@
     ''' </summary>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OrionVpn))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -41,6 +42,8 @@
         Me.Button5 = New System.Windows.Forms.Button()
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -88,7 +91,7 @@
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(12, 470)
+        Me.Button2.Location = New System.Drawing.Point(12, 516)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(209, 33)
         Me.Button2.TabIndex = 4
@@ -214,13 +217,23 @@
         Me.LabelControl2.TabIndex = 14
         Me.LabelControl2.Text = "Estado :"
         '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
+        Me.NotifyIcon1.Text = "OrionVpn"
+        Me.NotifyIcon1.Visible = True
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 3000
+        '
         'OrionVpn
         '
         Me.Appearance.BackColor = System.Drawing.Color.White
         Me.Appearance.Options.UseBackColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(233, 515)
+        Me.ClientSize = New System.Drawing.Size(233, 561)
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.Button5)
@@ -236,6 +249,7 @@
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.IconOptions.Icon = CType(resources.GetObject("OrionVpn.IconOptions.Icon"), System.Drawing.Icon)
         Me.IconOptions.Image = Global.orionsoftvpnautoconnect.My.Resources.Resources.RionSoft__6_
         Me.MaximizeBox = False
         Me.Name = "OrionVpn"
@@ -262,6 +276,8 @@
     Friend WithEvents Button5 As Button
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents Timer2 As Timer
 
 #End Region
 

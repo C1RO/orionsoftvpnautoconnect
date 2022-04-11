@@ -6,7 +6,11 @@ Imports Microsoft.VisualBasic.Devices
 Partial Public Class OrionVpn
     Public Sub New()
         InitializeComponent()
+
+        Me.WindowState = FormWindowState.Minimized
         Timer1.Start()
+        Timer2.Start()
+
     End Sub
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
@@ -167,6 +171,40 @@ Partial Public Class OrionVpn
     End Sub
 
     Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+    Private Sub Form1_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
+        Try
+            If Me.WindowState = FormWindowState.Minimized Then
+                Me.Visible = False
+                NotifyIcon1.Visible = True
+            End If
+
+
+
+
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+
+        End Try
+    End Sub
+
+    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
+        Try
+            Me.Visible = True
+            Me.WindowState = FormWindowState.Normal
+            NotifyIcon1.Visible = False
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        AutoConnect(TextBox3.Text)
+        CheckVpnConnection(TextBox3.Text)
+        Timer2.Stop()
 
     End Sub
 End Class
