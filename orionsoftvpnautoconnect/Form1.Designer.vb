@@ -65,7 +65,6 @@
         Me.TextBox2.ForeColor = System.Drawing.Color.Navy
         Me.TextBox2.Location = New System.Drawing.Point(12, 146)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(209, 27)
         Me.TextBox2.TabIndex = 2
         '
@@ -102,7 +101,6 @@
         Me.TextBox3.ForeColor = System.Drawing.Color.Navy
         Me.TextBox3.Location = New System.Drawing.Point(12, 193)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox3.Size = New System.Drawing.Size(209, 27)
         Me.TextBox3.TabIndex = 5
         '

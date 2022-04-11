@@ -60,10 +60,10 @@
     <ApplicationIcon>rionsoft__6__8Wi_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>A500710FA0393F5BF43C552CAEB4EE0C813AF121</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>F13049EF95EF74702D59DF907BD5FA1FEEF06229</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>orionsoftvpnautoconnect_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>orionsoftvpnautoconnect_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -146,6 +146,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="orionsoftvpnautoconnect_1_TemporaryKey.pfx" />
     <None Include="orionsoftvpnautoconnect_TemporaryKey.pfx" />
     <None Include="Resources\RionSoft %286%29.png" />
   </ItemGroup>

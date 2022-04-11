@@ -165,4 +165,8 @@ Partial Public Class OrionVpn
     Private Sub LabelControl1_Click(sender As Object, e As EventArgs) Handles LabelControl1.Click
 
     End Sub
+
+    Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class
