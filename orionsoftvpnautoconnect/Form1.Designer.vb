@@ -43,7 +43,6 @@
         Me.LabelControl1 = New DevExpress.XtraEditors.LabelControl()
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -223,10 +222,6 @@
         Me.NotifyIcon1.Text = "OrionVpn"
         Me.NotifyIcon1.Visible = True
         '
-        'Timer2
-        '
-        Me.Timer2.Interval = 3000
-        '
         'OrionVpn
         '
         Me.Appearance.BackColor = System.Drawing.Color.White
@@ -277,7 +272,6 @@
     Friend WithEvents LabelControl1 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents NotifyIcon1 As NotifyIcon
-    Friend WithEvents Timer2 As Timer
 
 #End Region
 
