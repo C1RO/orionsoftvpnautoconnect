@@ -10,7 +10,6 @@ Partial Public Class OrionVpn
     End Sub
 
 
-
     Private Sub VpnConnect(uservpn As String, passvpn As String, server As String)
 
         Dim cmd = "cmd.exe /c rasdial " & server & " " & uservpn & " " & passvpn & ""
@@ -163,34 +162,36 @@ Partial Public Class OrionVpn
 
         End Try
     End Sub
+    Dim ShortcutPath As String = Environment.GetFolderPath(Environment.SpecialFolder.Startup) & "/OrionVpnAuto.lnk"
+
+    Private Sub CreateShortCut(File As String, ShortCutPath As String)
+        Dim oShell As Object
+        Dim oLink As Object
 
 
+        Try
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs)
+            oShell = CreateObject("WScript.Shell")
+            oLink = oShell.CreateShortcut(ShortCutPath)
+            oLink.IconLocation = File
+            oLink.TargetPath = File
+            oLink.Arguments = ""
+            oLink.WindowStyle = 1
+            oLink.Save()
+        Catch ex As Exception
+
+        End Try
     End Sub
 
 
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs)
 
 
 
 
 
-
-
-
-
-    End Sub
-
-    Private Sub Button6_Click_1(sender As Object, e As EventArgs)
-
-
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        CreateShortCut(Application.ExecutablePath, ShortcutPath)
     End Sub
 End Class
 

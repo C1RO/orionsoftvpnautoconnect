@@ -44,6 +44,7 @@
         Me.LabelControl2 = New DevExpress.XtraEditors.LabelControl()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.WcfInstantFeedbackSource1 = New DevExpress.Data.WcfLinq.WcfInstantFeedbackSource()
+        Me.Button6 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -90,7 +91,7 @@
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(12, 470)
+        Me.Button2.Location = New System.Drawing.Point(12, 509)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(209, 30)
         Me.Button2.TabIndex = 4
@@ -222,13 +223,27 @@
         Me.NotifyIcon1.Text = "OrionVpn"
         Me.NotifyIcon1.Visible = True
         '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button6.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Location = New System.Drawing.Point(12, 473)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(209, 30)
+        Me.Button6.TabIndex = 15
+        Me.Button6.Text = "Ejecutar al inicio"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
         'OrionVpn
         '
         Me.Appearance.BackColor = System.Drawing.Color.White
         Me.Appearance.Options.UseBackColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(233, 522)
+        Me.ClientSize = New System.Drawing.Size(233, 551)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.LabelControl2)
         Me.Controls.Add(Me.LabelControl1)
         Me.Controls.Add(Me.Button5)
@@ -273,6 +288,7 @@
     Friend WithEvents LabelControl2 As DevExpress.XtraEditors.LabelControl
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents WcfInstantFeedbackSource1 As DevExpress.Data.WcfLinq.WcfInstantFeedbackSource
+    Friend WithEvents Button6 As Button
 
 #End Region
 
