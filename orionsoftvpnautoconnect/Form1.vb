@@ -1,13 +1,14 @@
 ﻿Imports System.Net.NetworkInformation
 
+
 Partial Public Class OrionVpn
     Public Sub New()
         InitializeComponent()
-
-        Me.WindowState = FormWindowState.Minimized
         Timer1.Start()
+        Me.WindowState = FormWindowState.Minimized
 
     End Sub
+
 
 
     Private Sub VpnConnect(uservpn As String, passvpn As String, server As String)
@@ -68,7 +69,6 @@ Partial Public Class OrionVpn
         Else
 
             VpnConnect(TextBox2.Text, TextBox1.Text, TextBox3.Text)
-            CheckVpnConnection(TextBox3.Text)
 
         End If
 
@@ -84,17 +84,23 @@ Partial Public Class OrionVpn
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         'CONECTAR
+
+
         VpnConnect(TextBox2.Text, TextBox1.Text, TextBox3.Text)
 
-
+        Timer1.Start()
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         VpnDisconnect(TextBox3.Text)
+        Timer1.Stop()
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        LabelControl1.Text = "Checking"
+        LabelControl1.ForeColor = Color.Yellow
         CheckVpnConnection(TextBox3.Text)
     End Sub
 
@@ -103,6 +109,8 @@ Partial Public Class OrionVpn
         TextBox1.Text = My.Settings.Password
         TextBox2.Text = My.Settings.User
         TextBox3.Text = My.Settings.Server
+        VpnConnect(TextBox2.Text, TextBox1.Text, TextBox3.Text)
+
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -156,7 +164,30 @@ Partial Public Class OrionVpn
         End Try
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
+    End Sub
+
+
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
+
+
+
+
+
+
+
+
+
+    End Sub
+
+    Private Sub Button6_Click_1(sender As Object, e As EventArgs) 
+
+
 
     End Sub
 End Class
+
+
